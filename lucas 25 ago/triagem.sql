@@ -1,24 +1,30 @@
 CREATE DATABASE triagem;
-USE triagem 
+USE triagem
 CREATE TABLE pacientes(
 
+
 id INT AUTO_INCREMENT PRIMARY KEY,
-nome VARCHAR () NOT NULL,
+nome VARCHAR (50) NOT NULL,
 idade INT NOT NULL,
 cpf VARCHAR(20) NOT NULL,
-sexo VARCHAR,
+sexo VARCHAR (20),
 data_nascimento DATE,
 telefone VARCHAR(30),
 endereco VARCHAR(200),
-sintomas varchar(300) NOT NULL,
+
+sintomas TEXT NOT NULL,
 inicio_sintomas DATE,
-doencas_pre_existentes (300)VARCHAR,
-uso_medicamentos (200)VARCHAR,
-alergias (200)VARCHAR,
-pressao_arterial VARCHAR(5) NOT NULL,
-temperatura (2) VARCHAR,
-frequencia_cardiaca (200) VARCHAR,
-saturacao_o2 VARCHAR,
+doencas_pre_existentes TEXT,
+uso_medicamentos TEXT,
+alergias TEXT,
+
+pressao_arterial TEXT NOT NULL,
+temperatura VARCHAR(20),
+frequencia_cardiaca VARCHAR (10),
+saturacao_o2 VARCHAR (20),
 observacao TEXT NOT NULL,
 
+
 );
+
+
